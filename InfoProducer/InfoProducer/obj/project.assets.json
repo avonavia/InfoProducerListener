@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MySerializer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
+      "MySerializer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MySerializer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MySerializer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Common/Common.csproj",
+      "msbuildProject": "../../Common/Common/Common.csproj"
+    },
+    "MySerializer/1.0.0": {
+      "type": "project",
+      "path": "../../Serializer13042023/MySerializer/MySerializer.csproj",
+      "msbuildProject": "../../Serializer13042023/MySerializer/MySerializer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Common >= 1.0.0",
+      "MySerializer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nyanp\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\nyanp\\source\\repos\\InfoProducer\\InfoProducer\\InfoProducer.csproj",
+      "projectName": "InfoProducer",
+      "projectPath": "C:\\Users\\nyanp\\source\\repos\\InfoProducer\\InfoProducer\\InfoProducer.csproj",
+      "packagesPath": "C:\\Users\\nyanp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nyanp\\source\\repos\\InfoProducer\\InfoProducer\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\nyanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\nyanp\\source\\repos\\Common\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\nyanp\\source\\repos\\Common\\Common\\Common.csproj"
+            },
+            "C:\\Users\\nyanp\\source\\repos\\Serializer13042023\\MySerializer\\MySerializer.csproj": {
+              "projectPath": "C:\\Users\\nyanp\\source\\repos\\Serializer13042023\\MySerializer\\MySerializer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
